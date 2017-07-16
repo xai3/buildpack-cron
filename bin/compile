@@ -25,6 +25,7 @@ function set-env (){
 speak "Starting..."
 
 speak "Updating apt"
+mkdir -p /var/lib/apt/lists/partial
 apt-get update
 
 speak "Installing cron"
